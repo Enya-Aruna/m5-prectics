@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- awesome kit link -->
+    <script src="https://kit.fontawesome.com/8d40faf00e.js" crossorigin="anonymous"></script>
+    <title>Text Editor</title>
+</head>
+<body>
+    <section class="flex  justify-center">
+        <div class=" bg-blue-300 w-full h-screen">
+               <h1 class="text-2xl text-center mt-2 font-semibold italic">My Text Editor</h1>
+               <div class="flex justify-center">
+                <div class=" border-2 border-black w-9/12 h-[300px] m-2 bg-blue-200 rounded-xl p-4">
+                <div class="flex justify-between">
+                    <!-- font bold , font italic and text decoration button -->
+                    <div class="flex">
+                        <button id="bold" class="py-2 px-2 font-semibold rounded-lg ">
+                            <i class="fa-solid fa-b"></i>
+                          </button>
+                        <button id="italic" class="py-2 px-2 font-semibold rounded-lg ">
+                            <i class="fa-solid fa-italic"></i>
+                          </button>
+                        <button id="underline" class="py-2 px-2 font-semibold rounded-lg ">
+                            <i class="fa-solid fa-underline"></i>
+                          </button>
+                          
+                    </div>
+                    <!-- Text Alignment button -->
+                    <div class="flex ">
+                        <button id="align-left" class="py-2 px-2 font-semibold rounded-lg ">
+                            <i class="fa-solid fa-align-left"></i>
+                          </button>
+                        <button id="align-center" class="py-2 px-2 font-semibold rounded-lg ">
+                            <i class="fa-solid fa-align-center"></i>
+                          </button>
+                        <button id="align-justify" class="py-2 px-2 font-semibold rounded-lg ">
+                            <i class="fa-solid fa-align-justify"></i>
+                          </button>
+                        <button  id="align-right" class="py-2 px-2 font-semibold rounded-lg ">
+                            <i class="fa-solid fa-align-right"></i>
+                          </button>
+                    </div>
+                    <div class="flex px-2">
+                      
+                        <input class="w-12 mt-2" 
+                        type="number" 
+                        min="1"
+                        max="15"
+                        value="10"
+                         id="number"
+                         onchange="f1(this)">
+                     
+                        <button id="Aa"  class="py-2 px-2 font-semibold rounded-lg ">
+                           aA
+                          </button>
+                            <input onchange="f2(this)" type="color" name="" id="color">
+                    </div>
+                </div>
+                    <div class="w-100 h-2 m-2 border-t-2 border-black"></div>
+                    <div class="flex justify-center m-auto">
+                       
+                        <textarea class="" name="" id="textArea" cols="86" rows="8"></textarea>
+                    </div>
+                </div>
+               </div>
+
+        </div>
+    </section>
+    <script src="js/style.js"></script>
+</body>
+</html>
