@@ -14,10 +14,11 @@ function f2(e){
 // upper and lower case function
 document.getElementById("Aa").addEventListener('click' , function(){
     
-        if(textArea.style.textTransform = "lowercase"){
+        if(textArea.style.textTransform == "lowercase"){
             textArea.style.textTransform = "uppercase" ;
         }
-        else{
+        else
+        {
             textArea.style.textTransform = "lowercase" ;
          
         }
